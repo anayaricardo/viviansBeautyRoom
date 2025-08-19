@@ -1,0 +1,97 @@
+#root {
+  max-width: 1280px;
+  margin: 0 auto;
+  padding: 2rem;
+  text-align: center;
+}
+
+.glass-container {
+  max-width: 800px;
+  background: rgba(255, 255, 255, 0.2); /* Fondo semi-transparente */
+  border-radius: 16px; /* Bordes redondeados */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1); /* Sombra para dar profundidad */
+  backdrop-filter: blur(
+    10px
+  ); /* La propiedad clave para el efecto de cristal */
+  -webkit-backdrop-filter: blur(10px); /* Compatibilidad con Safari */
+  border: 1px solid rgba(255, 255, 255, 0.3); /* Un borde sutil y semi-transparente */
+  padding: 2rem; /* Espacio interno para que el contenido no toque los bordes */
+  margin: 2rem auto; /* Centra el contenedor y añade margen */
+}
+
+.social-media-icon {
+  filter: drop-shadow(
+    0 2px 5px rgba(0, 0, 0, 0.3)
+  ); /* Ligera sombra en los iconos de redes sociales*/
+}
+
+.logo {
+  height: 15em;
+  padding: 1.5em;
+  will-change: filter;
+  transition: filter 300ms;
+}
+
+.social-media-fixed-container {
+  position: fixed;
+  bottom: 30px;
+  right: 20px;
+  z-index: 1000;
+}
+
+.horizontal-image {
+  width: 100%; /* La imagen ocupa el ancho completo de su contenedor */
+  max-width: 850px; /* Limita el ancho en pantallas grandes para que no sea demasiado grande */
+  height: auto; /* Mantiene la proporción de la imagen */
+  display: block; /* Elimina cualquier espacio adicional debajo de la imagen */
+  margin: 1px auto; /* Centra la imagen y añade un margen superior e inferior */
+  border-radius: 8px; /* Opcional: añade bordes redondeados */
+  box-shadow: 0 4px 30px rgba(0, 0, 0, 0.1);
+}
+
+.social-media-container {
+  display: flex; /* Para que los iconos estén en línea */
+  justify-content: center; /* Centra los iconos horizontalmente */
+  gap: 20px; /* Espacio entre los iconos */
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 40px; /* Ajusta el tamaño de la imagen */
+  height: auto;
+  transition: transform 0.3s ease; /* Efecto de transición para el hover */
+}
+
+.social-icon:hover {
+  transform: scale(1.1); /* Agranda la imagen al pasar el mouse */
+}
+
+.read-the-docs {
+  color: #555555;
+  margin-top: 1px;
+}
+
+h2 {
+  /* text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.4); */
+  text-align: center;
+  margin-top: 1px;
+  margin-bottom: 30px;
+  color: #ff8fab;
+  /* color: #555555; */
+}
+
+h3 {
+  text-align: center;
+  margin-bottom: 80px;
+  padding: 1em;
+  /* color: #ff8fab; */
+  color: #555555;
+}
+
+h4 {
+  text-align: center;
+  margin-bottom: 10px;
+  padding: 1em;
+  /* color: #ff8fab; */
+  color: #555555;
+}
